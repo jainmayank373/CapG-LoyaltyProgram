@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular\material\prebuilt-themes\indigo-pink.css";
+.mat-tab-group {
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.mat-drawer-backdrop{
+    z-index: 0 !important;
+}
+.mat-card{
+    margin: 14px;
+    border-bottom: 1px solid pink;
+}

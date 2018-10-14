@@ -1,0 +1,18 @@
+<mat-toolbar class="bonus_toolbar">
+  <button routerLink="/welcome" mat-icon-button><i class="fa fa-angle-left"></i></button>
+  <h1 style="color:white">BONUS</h1>
+</mat-toolbar>
+<mat-card *ngFor="let bonus of bounsArray;let i = index">
+      <mat-card-header>
+        <mat-card-title>Bonus</mat-card-title>
+      </mat-card-header>
+        <mat-card-content>
+              <h2>
+            Points Balance {{ bonus}}
+          </h2>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button  (click)=" redeem(bonus)" color="accent">Redeem</button>
+        </mat-card-actions>
+      
+</mat-card>

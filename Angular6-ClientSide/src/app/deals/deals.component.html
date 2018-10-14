@@ -1,0 +1,27 @@
+<div class="deals">
+
+  <div >
+      <mat-card *ngFor="let deal of deals" fxLayoutGap="20px">
+        <mat-card-header>
+          <mat-card-title><h3>{{deal.productName}}</h3></mat-card-title>
+          <mat-card-subtitle>{{deal.location}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content >
+          <div  class="card_content" fxLayoutGap="40px">
+         <span style="color:black;font-size:17">Price: Rs.{{deal.price}}</span><br/>
+          <span>Quantity: {{deal.quantity}}</span><br/>
+          <span style="color:yellow">Bonus Point: {{deal.pointBalance}}</span>
+          </div>
+        </mat-card-content>
+       <mat-chip-list>
+            <mat-chip  color="warn" selected>{{deal.discount}}% OFF</mat-chip>
+          </mat-chip-list>
+          
+      
+        <mat-card-actions fxLayout="row" fxLayoutGap="10px">
+          <button mat-raised-button (click)="optin(deal)"  color="accent">OPT IN</button>
+          <button mat-raised-button (click)="addCart(deal)" color="accent">Add To Cart</button>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+</div>

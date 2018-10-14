@@ -1,0 +1,31 @@
+.d{
+    height: 100%;
+}
+.d_container{
+   width: 300px;
+  height: 100%;
+  
+}
+.d_sidenav-content{
+     display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4081;
+}
+.d_drawer{
+    width: 40%;
+  background-color: #ff4081;
+height: 100%;
+color: white;
+}
+.d_button  button{
+    width: 20px !important;
+    height: 42px !important;
+margin: 10px;
+font-size: 18px;
+}
+.d_button-toggle button{
+        height: 10%;
+        font-size: 23px !important;
+}

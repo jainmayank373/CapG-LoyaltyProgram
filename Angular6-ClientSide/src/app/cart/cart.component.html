@@ -1,0 +1,16 @@
+<mat-toolbar class="navbar">
+        <button mat-button  class="back_button" routerLink="/welcome"><i class="fa fa-angle-left"></i></button>
+        <h1>CART</h1>
+</mat-toolbar>
+<mat-card *ngFor="let cart of cartItem"> 
+    <mat-card-header >
+        <mat-card-title>{{cart.ownerName}}</mat-card-title>
+        <mat-card-subtitle>{{cart.productName}}</mat-card-subtitle>
+    </mat-card-header>
+    <span>Price: {{cart.price}}</span><br/><span>Quantity: {{cart.quantity}}</span>
+    <mat-card-content>
+        <mat-chip-list>
+            <mat-chip color="accent" selected>{{cart.discount}}%</mat-chip>
+        </mat-chip-list>
+    </mat-card-content>
+</mat-card>

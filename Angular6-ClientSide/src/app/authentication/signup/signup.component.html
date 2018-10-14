@@ -1,0 +1,19 @@
+<div>
+  <form fxLayout="column" #f="ngForm" (ngSubmit)="signUp(f)" fxLayoutAlign="center center">
+    <mat-form-field>
+        <input matInput placeholder="Name" ngModel name="name">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="User Name" ngModel name="username">
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Enter Passsword" ngModel name="password">
+    </mat-form-field>
+
+    <div fxLayout="row" fxLayoutGap="10px">
+      <button mat-raised-button type="submit" color="accent">SignUP</button>
+      <button routerLink="/" mat-raised-button color="accent">Cancel</button>
+    </div>
+  </form>
+</div>

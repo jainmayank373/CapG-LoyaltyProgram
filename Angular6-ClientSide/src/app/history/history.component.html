@@ -1,0 +1,17 @@
+<mat-toolbar class="navbar">
+<button mat-button routerLink="/welcome" class="back_button"><i class="fa fa-angle-left"></i></button>
+<h2>HISTORY</h2>
+</mat-toolbar >
+<mat-card *ngFor="let historyData of historyDatas " fxLayoutGap="20px">
+  <mat-card-header>
+      <mat-card-title>{{historyData.productName}}</mat-card-title>
+      <mat-card-subtitle>{{historyData.location}}</mat-card-subtitle>
+  </mat-card-header>
+  <span>Price: {{historyData.price}} </span><br/>
+  <span>Quantity: {{historyData.quantity}}</span>
+  <mat-card-content>
+    <mat-chip-list>
+      <mat-chip selected color="accent">{{historyData.discount}}%</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+</mat-card>
